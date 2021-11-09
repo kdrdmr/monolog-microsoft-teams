@@ -46,7 +46,7 @@ class TeamsLogHandler extends AbstractProcessingHandler
     protected function getMessage(array $record): TeamsMessage
     {
         return new TeamsMessage([
-            'title' => $record['level_name'] . ': ' . $record['message'],
+            'title' => $record['level_name'],
             'text' => $record['formatted'],
             'themeColor' => self::$levelColors[$record['level']] ?? self::$levelColors[$this->level],
         ]);
