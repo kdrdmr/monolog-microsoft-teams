@@ -17,7 +17,7 @@ class TeamsLogHandler extends AbstractProcessingHandler
      */
     private static $levelColors = [
         Logger::DEBUG => '0080FF',
-        Logger::INFO => '0080FF',
+        Logger::INFO => '00FF00',
         Logger::NOTICE => '0080FF',
         Logger::WARNING => 'FF8000',
         Logger::ERROR => 'FF0000',
